@@ -1,0 +1,26 @@
+name: order-check
+# Our gates (additive to Todd's auto-merge.yml): structural schema, field-order
+# warnings, and decode-correctness against golden samples.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: pip install jsonschema
+      - name: structural validation (schema)
+        run: python3 scripts/validate.py
+      - name: field-order warnings (non-blocking backlog)
+        run: python3 scripts/check_order.py
+      - name: decode-correctness (golden samples)
+        run: python3 scripts/selftest.py
+      # Flip to strict once the DISCREPANCIES backlog is cleared, so no NEW
+      # reversed template can merge:
+      # - run: python3 scripts/check_order.py --strict
