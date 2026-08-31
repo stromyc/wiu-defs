@@ -201,7 +201,7 @@
       ]
     },
     "710343542005": {
-      "name": "",
+      "name": "S Burlington",
       "sig": "CN",
       "ind": [
         {
@@ -216,7 +216,8 @@
         {
           "signal": "3"
         }
-      ]
+      ],
+      "note": "MP 72.8, confirmed 2026-08-31 by four operator sightings at MP 72.3 the same morning: NB 03:05 / 04:45 / 05:32 each knocked signal:1 down at +1:48 / +1:32 / +2:04, and SB CN 3285 at 07:12 knocked signal:2 down at -0:16. Different head per direction, no other wayside near more than one sighting. First confirmed milepost south of Grand Ave."
     },
     "710343543505": {
       "name": "",
@@ -231,7 +232,7 @@
       ]
     },
     "710343545505": {
-      "name": "",
+      "name": "S Midway",
       "sig": "CN",
       "ind": [
         {
@@ -246,10 +247,11 @@
         {
           "signal": "3"
         }
-      ]
+      ],
+      "note": "Named 2026-08-31 by elimination, not by a sighting. Between S Burlington (542005, pinned the same day by four operator sightings) and S Vernon (549005) the archive contains exactly ONE well-received pair of 24-bit control points - this and 546005 - and the operator siding list has exactly one siding in that stretch, Midway MP 80.1-82.3. The pair also works its switches together: 19 of 21 reverse windows coupled. Knockdown timing anchored on 542005=72.8 independently gives MP 79.7. The 2026-08-09 operator series (MOVEMENT-20260809 sec 5, NB#1) interpolates this ID to MP 88.4 instead; that is rejected because 88-89 falls inside the Vernon siding, whose ends are 549005/549505 - which is the lagged-relay explanation that document's own sec 6.2 offered for the same conflict."
     },
     "710343546005": {
-      "name": "",
+      "name": "N Midway",
       "sig": "CN",
       "ind": [
         {
@@ -264,7 +266,8 @@
         {
           "signal": "3"
         }
-      ]
+      ],
+      "note": "Named 2026-08-31 on the same basis as 545505, which it is paired with; see that note. Timing anchored on 542005=72.8 gives MP 81.2 against Midway's 82.3. NOT S Vernon: three waysides lie between it and N Vernon, and on 2026-08-30 a train knocked down 548005 and 548505 on the main and only then took the diverging route at 549005 into the Vernon siding, coming out at N Vernon 8 min later. The 2026-08-10 LTT crosswalk pinning this ID `s_vernon` at MP 89.7 is wrong on that evidence and should be corrected wherever it was handed downstream. S Vernon is 549005."
     },
     "710343548005": {
       "name": "",
@@ -722,6 +725,25 @@
           "signal": "S"
         }
       ]
+    },
+    "710343542505": {
+      "name": "N Burlington",
+      "sig": "CN",
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
+        }
+      ],
+      "note": "Named 2026-08-31 on the operator's judgement, from THREE FRAMES - 2026-08-28 07:07-07:10, the only reception ever. Basis: it is the wayside immediately north of 542005 (S Burlington, MP 72.8, four sightings the same day), every confirmed siding on this sub has its two ends adjacent in the WIUID ladder, and its 24-bit payload validates on the sibling control-point layout with a dead 7-bit tail. There is no sighting of this wayside. If one ever contradicts this, this name is the first thing to drop."
     }
   }
 }
