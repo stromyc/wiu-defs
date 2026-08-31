@@ -1,0 +1,17 @@
+{
+  "wiuid": "710343550505",
+  "data": "173F",
+  "note": "Sunset Drive; aspect-fit [sig,sig]=99% vs [sig,sig,sig]=0% (3rd field is all-ones padding), 25407 fr rpi5-ptc. Approach+Advance Approach.",
+  "expected": [
+    {
+      "kind": "signal",
+      "label": "1",
+      "value": 8
+    },
+    {
+      "kind": "signal",
+      "label": "2",
+      "value": 7
+    }
+  ]
+}
