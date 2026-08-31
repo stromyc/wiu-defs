@@ -1,12 +1,12 @@
 {
-  "wiuid": "710343530005",
-  "data": "70BF",
-  "note": "aspect-fit 96%: Restricting+Approach (607 fr) | field cross-check pending",
+  "wiuid": "710343527505",
+  "data": "10BF",
+  "note": "aspect-fit 89%: two Approach signals (17615 fr) | field cross-check pending",
   "expected": [
     {
       "kind": "signal",
       "label": "1",
-      "value": 14
+      "value": 8
     },
     {
       "kind": "signal",

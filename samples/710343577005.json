@@ -1,7 +1,7 @@
 {
   "wiuid": "710343577005",
   "data": "E63F",
-  "note": "RETYPE to two signals: 'switch' invalid both ways (<42% ceiling, 11003 frames). Field cross-check pending.",
+  "note": "aspect-fit 99% (11082 fr, rpi5-Util) | field cross-check pending",
   "expected": [
     {
       "kind": "signal",

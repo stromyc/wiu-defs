@@ -1,12 +1,12 @@
 {
-  "wiuid": "710343585505",
-  "data": "7DEF00",
-  "note": "aspect-fit 100% (636 fr, rpi5-Util) | field cross-check pending",
+  "wiuid": "710343534505",
+  "data": "BDE880",
+  "note": "aspect-fit 98%: Reverse+Approach-Diverging diverging move (475 fr) | field cross-check pending",
   "expected": [
     {
       "kind": "switch",
       "label": "1",
-      "value": 2
+      "value": 1
     },
     {
       "kind": "signal",
@@ -21,7 +21,7 @@
     {
       "kind": "signal",
       "label": "3",
-      "value": 15
+      "value": 17
     }
   ]
 }

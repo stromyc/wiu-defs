@@ -1,7 +1,7 @@
 {
   "wiuid": "710343537005",
   "data": "7DEF7FC0",
-  "note": "REORDER switch-first: switch reads Normal(2); analyze_cp_order 99.7% valid vs 87.3% current over 1209 frames. Field cross-check pending.",
+  "note": "aspect-fit 99% (1209 fr) | field cross-check pending",
   "expected": [
     {
       "kind": "switch",
@@ -11,6 +11,16 @@
     {
       "kind": "signal",
       "label": "1",
+      "value": 15
+    },
+    {
+      "kind": "signal",
+      "label": "2",
+      "value": 15
+    },
+    {
+      "kind": "signal",
+      "label": "3",
       "value": 15
     }
   ]

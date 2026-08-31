@@ -1,7 +1,7 @@
 {
-  "wiuid": "710343585505",
+  "wiuid": "710343539505",
   "data": "7DEF00",
-  "note": "aspect-fit 100% (636 fr, rpi5-Util) | field cross-check pending",
+  "note": "aspect-fit 100% (61 fr) | field cross-check pending",
   "expected": [
     {
       "kind": "switch",

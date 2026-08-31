@@ -1,7 +1,7 @@
 {
   "wiuid": "710343548005",
   "data": "E73F",
-  "note": "TRIM phantom switch -> two signals: 3rd field padding(31); switch invalid both ways (<26%, 8931 frames). Field cross-check pending.",
+  "note": "aspect-fit 98-100% (both Pis) | field cross-check pending",
   "expected": [
     {
       "kind": "signal",

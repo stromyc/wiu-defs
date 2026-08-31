@@ -1,7 +1,7 @@
 {
   "wiuid": "710343533006",
   "data": "10BF",
-  "note": "RETYPE to two signals: 'switch' invalid both ways (<12%, 1473 frames). Field cross-check pending.",
+  "note": "aspect-fit 100% (1473 fr) | field cross-check pending",
   "expected": [
     {
       "kind": "signal",

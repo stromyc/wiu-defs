@@ -7,7 +7,16 @@
       "sig": "CN",
       "ind": [
         {
-          "switch": "1"
+          "switch": ""
+        },
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
         }
       ]
     },
@@ -19,7 +28,7 @@
           "signal": "1"
         },
         {
-          "switch": "1"
+          "signal": "2"
         }
       ]
     },
@@ -27,9 +36,6 @@
       "name": "",
       "sig": "CN",
       "ind": [
-        {
-          "switch": "1"
-        },
         {
           "signal": "1"
         },
@@ -91,10 +97,16 @@
       "sig": "CN",
       "ind": [
         {
+          "switch": ""
+        },
+        {
           "signal": "1"
         },
         {
-          "switch": "1"
+          "signal": "2"
+        },
+        {
+          "signal": "3"
         }
       ]
     },
@@ -103,7 +115,16 @@
       "sig": "CN",
       "ind": [
         {
-          "switch": "1"
+          "switch": ""
+        },
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
         }
       ]
     },
@@ -112,10 +133,16 @@
       "sig": "CN",
       "ind": [
         {
-          "switch": "1"
+          "switch": ""
         },
         {
           "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
         }
       ]
     },
@@ -148,7 +175,16 @@
       "sig": "CN",
       "ind": [
         {
-          "switch": "1"
+          "switch": ""
+        },
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
         }
       ]
     },
@@ -247,7 +283,16 @@
       "sig": "CN",
       "ind": [
         {
-          "switch": "1"
+          "switch": ""
+        },
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
         }
       ]
     },
@@ -644,10 +689,16 @@
       "sig": "CN",
       "ind": [
         {
-          "switch": "1"
+          "switch": ""
         },
         {
           "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
         }
       ]
     },

@@ -8,27 +8,31 @@ with a `samples/<wiuid>.json` golden test before committing.
 Validated-good baseline: CN switched CPs `[SW][SIG1=lone][SIG2=normal][SIG3=reverse]`.
 
 
-## RESOLVED — CN batch 1 (2026-08-30, data-gated from rpi5-ptc + rpi5-Util captures)
+## RESOLVED — CN batch 1 (2026-08-30, data-gated; 15 waysides)
 
-Proven with `scripts/analyze_cp_order.py` over full historical captures; each locked
-with `samples/<wiuid>.json`. `switch % valid` = fraction of frames whose switch reads {1,2}.
+Method: `scripts/cn_solve` scores every candidate field layout by the fraction of
+captured frames in which EVERY field is *sensible* — signals decode to a known CN
+aspect (3/7/8/14/15/17/18), switches read Normal/Reverse. The fullest layout that
+holds ≥95% is the true one. This supersedes the earlier switch-validity-only pass,
+which mis-sized three defs. Calibration: all known-good defs (542005, 546005,
+543505, 549505…) score 98–100% and are left untouched. Each fix locked with
+`samples/<wiuid>.json` decoding to real aspects.
 
-Reordered to switch-first (switch reads Normal=2 in steady state):
-- **710343537005** `[sig,switch]` → `[switch,sig]`  (99.7% vs 87.3%, 1209 fr)
-- **710343585505** `[sig,switch]` → `[switch,sig]`  (99.8% vs 70.8%, 636 fr)
-- **710343530005** `[sig,sig,switch]` → `[switch,sig,sig]`  (70.5% vs 17.6%, 607 fr; rest are idle 10BF)
+Switch-first CP, signals had been dropped/truncated → `[switch,sig,sig,sig]`:
+- **710343526505**, **535505**, **539505**, **549005** (were `[switch]` only — 22 bits of signal dropped)
+- **710343537005** (was `[sig,switch]`), **585505** (was `[sig,switch]`)
+- **710343534505** (was `[sig,switch]`) — proven by a Reverse+`Approach Diverging` diverging move
 
-Retyped to two signals (phantom switch — invalid in ALL orderings; 3-field ones
-had a 31/all-ones padding tail, confirming no real 3rd field):
-- **710343533005** `[sig,switch]` → `[sig,sig]`  (switch ≤24.7%, 17649 fr)
-- **710343533006** `[sig,switch]` → `[sig,sig]`  (switch ≤11.3%, 1473 fr)
-- **710343577005** `[sig,switch]` → `[sig,sig]`  (switch ≤41.7%, 11003 fr)
-- **710343530006** `[sig,sig,switch]` → `[sig,sig]`  (switch ≤10.4%, 556 fr)
-- **710343539005** `[sig,sig,switch]` → `[sig,sig]`  (switch ≤20.8%, 2815 fr)
-- **710343548005** `[sig,sig,switch]` → `[sig,sig]`  (switch ≤26.0%, 8931 fr)
+Two signals, phantom switch removed → `[sig,sig]`:
+- **710343530005** (was `[sig,sig,switch]`; earlier mis-fixed to switch-first — corrected: it is two signals `Restricting/Approach`)
+- **710343527505** (was `[sig,switch]`, switch read Idle/unknown)
+- **710343530006, 533005, 533006, 539005, 548005, 577005** (were `[sig,switch]`/`[sig,sig,switch]`)
 
-Still open: field cross-check (aspect names) against a physical observation for the
-above; **710343534505** left as-is (switch valid both ways = real switch, inconclusive).
+Held for field confirmation:
+- **710343534005** `[switch,switch]` — reads two *valid* switches (100%); no signal layout fits (≤12%).
+  Data cannot refute it; needs the physical plant's head/switch count.
+
+Still open: aspect-name (label) cross-check against a physical observation.
 
 ## A. REVERSED switched-CP suspects — switch present but NOT field 0, ≥2 signals. Likely auto-gen put switches last; validate switch-first per capture.  (29)
 

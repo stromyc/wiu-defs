@@ -1,7 +1,7 @@
 {
   "wiuid": "710343533005",
   "data": "10BF",
-  "note": "RETYPE to two signals: 'switch' invalid in all orderings (24% ceiling, 17649 frames) -> not a real switch. Field cross-check pending.",
+  "note": "aspect-fit 98% (17975 fr) | field cross-check pending",
   "expected": [
     {
       "kind": "signal",

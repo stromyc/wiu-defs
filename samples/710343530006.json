@@ -1,7 +1,7 @@
 {
   "wiuid": "710343530006",
   "data": "10BF",
-  "note": "TRIM phantom switch -> two signals: 3rd field decoded as 31 (all-ones padding); switch invalid both ways (<11%, 556 frames). Field cross-check pending.",
+  "note": "aspect-fit 100% (556 fr) | field cross-check pending",
   "expected": [
     {
       "kind": "signal",
