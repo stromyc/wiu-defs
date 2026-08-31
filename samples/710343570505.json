@@ -1,0 +1,37 @@
+{
+  "wiuid": "710343570505",
+  "data": "5F7BDE",
+  "note": "Slinger: 2 switches + 4 heads = 24 bits. Reference (v1.11) labels S1N/S1R/N2N/N2R kept; order is switches-first (wire truth; interleaved ref order decodes 0% vs 95.6%). Head->switch label pairing pending field confirmation.",
+  "expected": [
+    {
+      "kind": "switch",
+      "label": "1",
+      "value": 2
+    },
+    {
+      "kind": "switch",
+      "label": "2",
+      "value": 2
+    },
+    {
+      "kind": "signal",
+      "label": "S1N",
+      "value": 15
+    },
+    {
+      "kind": "signal",
+      "label": "S1R",
+      "value": 15
+    },
+    {
+      "kind": "signal",
+      "label": "N2N",
+      "value": 15
+    },
+    {
+      "kind": "signal",
+      "label": "N2R",
+      "value": 15
+    }
+  ]
+}
