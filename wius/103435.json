@@ -744,6 +744,57 @@
         }
       ],
       "note": "Named 2026-08-31 on the operator's judgement, from THREE FRAMES - 2026-08-28 07:07-07:10, the only reception ever. Basis: it is the wayside immediately north of 542005 (S Burlington, MP 72.8, four sightings the same day), every confirmed siding on this sub has its two ends adjacent in the WIUID ladder, and its 24-bit payload validates on the sibling control-point layout with a dead 7-bit tail. There is no sighting of this wayside. If one ever contradicts this, this name is the first thing to drop."
+    },
+    "710343529005": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
+        }
+      ],
+      "note": "Added 2026-08-31. Heard first on 2026-08-31 (7 frames); 24-bit, decodes 0 illegal on the sibling CP layout with a dead 7-bit tail. Position in the ladder only - unnamed, unplaced."
+    },
+    "710343538005": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        }
+      ],
+      "note": "Added 2026-08-31. 16-bit intermediate (126 frames, 2026-08-28); 0 illegal on [signal,signal], 126/126 illegal on the CP layout. Head order 1/2 is arbitrary - N/S not yet determined. Its tail bit [10] toggles, which verify_templates.py reports as FAIL; that is the documented [10:12] track-occupancy quadrature every 16-bit intermediate on this sub carries, not a short template."
+    },
+    "710343541105": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
+        }
+      ],
+      "note": "Added 2026-08-31. 24-bit CP (60 frames, 2026-08-28), switch seen both N and R; 0 illegal on the sibling layout, dead tail. Lies between 539505 and 542005, i.e. just south of S Burlington."
     }
   }
 }
