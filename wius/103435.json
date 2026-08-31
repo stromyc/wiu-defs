@@ -1,6 +1,6 @@
 {
-  "description": "Canadian National Railway (CN) - Waukesha Subdivision",
-  "version": "0.0.0",
+  "description": "Auto-generated + merged WIU decoders",
+  "version": "1.0",
   "waysides": {
     "710343526505": {
       "name": "",
@@ -294,6 +294,8 @@
       ]
     },
     "710343552005": {
+      "name": "Grand Ave",
+      "sig": "CN",
       "ind": [
         {
           "switch": ""
@@ -302,16 +304,22 @@
           "signal": "S"
         },
         {
-          "signal": "NR"
+          "signal": "NN"
         },
         {
-          "signal": "NN"
+          "signal": "NR"
         }
       ],
-      "name": "Grand Ave",
-      "sig": "CN"
+      "atcs": {
+        "mcp": "71035220020102",
+        "proto": "#",
+        "ibitsn": 48,
+        "ibits": "SASK,SC0K,SGK,FACK,SWCURRK,LZK,RWK,NWK,NSASK,NSC0K,NGK,NML0K,NMASK,NMC0K,NGK,SL0K,SRELK,SREQK,S0TK,SHTK,ASAK,OK,TK,NSL0K,NMRTTK,NMRELK,NMREQK,NM0TK,NMHTK,BK,1NAK,SRTTK,SMK,NSRTTK,NSRELK,NSREQK,NS0TK,NSHTK,,2NAK,LCK,GFK,FCK,EQFK,GENK,TEMPK,D0K,P0K"
+      }
     },
     "710343553505": {
+      "name": "S Waukesha",
+      "sig": "CN",
       "ind": [
         {
           "switch": ""
@@ -326,46 +334,64 @@
           "signal": "SR"
         }
       ],
-      "name": "S Waukesha",
-      "sig": "CN"
+      "atcs": {
+        "mcp": "71035220210102",
+        "proto": "#",
+        "ibitsn": 48,
+        "ibits": "NASK,NC0K,NGK,FACK,SWCURRK,LZK,RWK,NWK,SSASK,SSC0K,SGK,SML0K,SMASK,SMC0K,SGK,NL0K,NRELK,NREQK,N0TK,NHTK,ANAK,OK,TK,SSL0K,SMRTTK,SMRELK,SMREQK,SM0TK,SMHTK,ASAK,1OK,NRTTK,SMK,SSRTTK,SSRELK,SSREQK,SS0TK,SSHTK,BSAK,2OK,LCK,GFK,FCK,EQFK,GENK,TEMPK,D0K,P0K"
+      }
     },
     "710343557005": {
+      "name": "N Waukesha",
+      "sig": "CN",
       "ind": [
         {
           "switch": ""
+        },
+        {
+          "signal": "S"
         },
         {
           "signal": "NN"
         },
         {
           "signal": "NR"
-        },
-        {
-          "signal": "S"
         }
       ],
-      "name": "N Waukesha",
-      "sig": "CN"
+      "atcs": {
+        "mcp": "71035220210102",
+        "proto": "#",
+        "ibitsn": 48,
+        "ibits": "SASK,SC0K,SGK,FACK,SWCURRK,LZK,RWK,NWK,NSASK,NSC0K,NGK,NML0K,NMASK,NMC0K,NGK,SL0K,SRELK,SREQK,S0TK,SHTK,ASAK,OK,TK,NSL0K,NMRTTK,NMRELK,NMREQK,NM0TK,NMHTK,ANAK,1OK,SRTTK,SMK,NSRTTK,NSRELK,NSREQK,NS0TK,NSHTK,BNAK,2OK,LCK,GFK,FCK,EQFK,GENK,TEMPK,D0K,P0K"
+      }
     },
     "710343557505": {
+      "name": "S Duplainville",
+      "sig": "CN",
       "ind": [
         {
-          "switch": ""
+          "switch": "5"
         },
         {
           "signal": "N"
         },
         {
-          "signal": "SR"
+          "signal": "SN"
         },
         {
-          "signal": "SN"
+          "signal": "SR"
         }
       ],
-      "name": "S Duplainville",
-      "sig": "CN"
+      "atcs": {
+        "mcp": "71034350280102",
+        "proto": "#",
+        "ibitsn": 24,
+        "ibits": "TK,5RWK,5NWK,P0K,SMK,1EAK,1WAK,1TK,SGK,2EAK,2WAK,2TK,1OK,OK,NGK,5LZK,,,,CPREQK,4LZK,,4NWK,4RWK"
+      }
     },
     "710343562005": {
+      "name": "N Duplainville",
+      "sig": "CN",
       "ind": [
         {
           "switch": ""
@@ -374,16 +400,22 @@
           "signal": "S"
         },
         {
-          "signal": "NR"
+          "signal": "NN"
         },
         {
-          "signal": "NN"
+          "signal": "NR"
         }
       ],
-      "name": "N Duplainville",
-      "sig": "CN"
+      "atcs": {
+        "mcp": "71035220270102",
+        "proto": "#",
+        "ibitsn": 48,
+        "ibits": "SASK,SC0K,SGK,SWCURRK,FACK,LZK,RWK,NWK,NSASK,NSC0K,NGK,NML0K,NMASK,NMC0K,NGK,SL0K,SRELK,SREQK,S0TK,SHTK,ASAK,OK,TK,NSL0K,NMRTTK,NMRELK,NMREQK,NM0TK,NMHTK,ANAK,1OK,SRTTK,SMK,NSRTTK,NSRELK,NSREQK,NS0TK,NSHTK,BNAK,2NAK,LCK,GFK,FCK,EQFK,GENK,TEMPK,D0K,P0K"
+      }
     },
     "710343565005": {
+      "name": "N Sussex",
+      "sig": "CN",
       "ind": [
         {
           "signal": "N"
@@ -392,10 +424,16 @@
           "signal": "S"
         }
       ],
-      "name": "N Sussex",
-      "sig": "CN"
+      "atcs": {
+        "mcp": "71035220090102",
+        "proto": "#",
+        "ibitsn": 32,
+        "ibits": "SL0K,SASK,SC0K,SGK,NL0K,NASK,0LTK,NGK,SHTK,ASAK,SAK,NRELK,NREQK,NHTK,ANAK,OK,GFK,EQFK,GENK,TEMPK,D0K,P0K,SRELK,SREQK,,,,,,,,LCK"
+      }
     },
     "710343565505": {
+      "name": "N Lisbon Road",
+      "sig": "CN",
       "ind": [
         {
           "signal": "N"
@@ -403,11 +441,11 @@
         {
           "signal": "S"
         }
-      ],
-      "name": "N Lisbon Road",
-      "sig": "CN"
+      ]
     },
     "710343566005": {
+      "name": "Willow Creek Rd MP 112.16",
+      "sig": "CN",
       "ind": [
         {
           "signal": "N"
@@ -415,11 +453,11 @@
         {
           "signal": "S"
         }
-      ],
-      "name": "Willow Creek Rd",
-      "sig": "CN"
+      ]
     },
     "710343566505": {
+      "name": "Hubertus Rd area (N of MP 113.37)",
+      "sig": "CN",
       "ind": [
         {
           "signal": "N"
@@ -427,11 +465,11 @@
         {
           "signal": "S"
         }
-      ],
-      "name": "Hubertus Rd",
-      "sig": "CN"
+      ]
     },
     "710343567005": {
+      "name": "S Rugby",
+      "sig": "CN",
       "ind": [
         {
           "switch": ""
@@ -446,10 +484,16 @@
           "signal": "SR"
         }
       ],
-      "name": "S Rugby",
-      "sig": "CN"
+      "atcs": {
+        "mcp": "71035220120102",
+        "proto": "#",
+        "ibitsn": 48,
+        "ibits": "NL0K,NASK,NGK,FACK,SWCURRK,LZK,RWK,NWK,SSL0K,SSASK,SGK,,SML0K,SMASK,SGK,,NC0K,SP2K,SP1K,NHTK,ANAK,NAK,TK,,SMRTTK,SMC0K,,,SMHTK,,1OK,NRTTK,SMK,SSRTTK,SSC0K,,,SSHTK,,2OK,,GFK,LCK,EQFK,GENK,TEMPK,D0K,P0K"
+      }
     },
     "710343568005": {
+      "name": "N Rugby",
+      "sig": "CN",
       "ind": [
         {
           "switch": ""
@@ -464,8 +508,12 @@
           "signal": "NR"
         }
       ],
-      "name": "N Rugby",
-      "sig": "CN"
+      "atcs": {
+        "mcp": "71035220110102",
+        "proto": "#",
+        "ibitsn": 48,
+        "ibits": "SL0K,SASK,SGK,FACK,SWCURRK,LZK,RWK,NWK,NSL0K,NSASK,NGK,,NML0K,NMASK,NGK,,SC0K,SP2K,SP1K,SHTK,ASAK,OK,TK,,NMRTTK,NMC0K,,,NMHTK,,1OK,SRTTK,SMK,NSRTTK,NSC0K,,,NSHTK,,2OK,,GFK,LCK,EQFK,GENK,TEMPK,D0K,P0K"
+      }
     },
     "710343568325": {
       "name": "",
@@ -480,24 +528,26 @@
       ]
     },
     "710343568505": {
+      "name": "",
+      "sig": "CN",
       "ind": [
         {
           "switch": ""
         },
         {
-          "signal": "N"
+          "signal": "1"
         },
         {
-          "signal": "SN"
+          "signal": "2"
         },
         {
-          "signal": "SR"
+          "signal": "3"
         }
-      ],
-      "name": "S Ackerville",
-      "sig": "CN"
+      ]
     },
     "710343570005": {
+      "name": "N Ackerville",
+      "sig": "CN",
       "ind": [
         {
           "switch": ""
@@ -511,9 +561,7 @@
         {
           "signal": "NR"
         }
-      ],
-      "name": "N Ackerville",
-      "sig": "CN"
+      ]
     },
     "710343570505": {
       "name": "Slinger",
