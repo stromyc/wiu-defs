@@ -85,10 +85,19 @@
       "sig": "CN",
       "ind": [
         {
-          "switch": "1"
+          "switch": ""
         },
         {
-          "switch": "2"
+          "switch": ""
+        },
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
         }
       ]
     },

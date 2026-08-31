@@ -11,7 +11,7 @@ left alone; truncated/mistyped ones surface a better-fitting layout.
 Usage:
     python3 scripts/cn_solve.py <wius_dir> <capture.jsonl[.gz] ...>
 
-Limitation: only tries 0- or 1-switch layouts, so genuine multi-switch plants
+Limitation: tries 0-2 switch layouts, so genuine multi-switch plants
 (e.g. [switch,switch,sig,sig,sig,sig]) score their CURRENT layout high and show a
 bogus low best-fit — treat a high cur%% as already-correct. Changes NO defs.
 """
@@ -59,7 +59,7 @@ def score(bitsets,struct):
     return (good/tot if tot else 0),tot
 def candidates(maxbits):
     out=[]
-    for nsw in(0,1):
+    for nsw in(0,1,2):
         for nsig in range(1,7):
             st=["switch"]*nsw+["signal"]*nsig
             if sum(FW[x] for x in st)<=maxbits: out.append(st)
