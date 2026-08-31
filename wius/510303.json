@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "description": "Auto-generated + merged WIU decoders",
+  "waysides": {
+    "751030302510": {
+      "name": "",
+      "sig": "UNK",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        }
+      ]
+    },
+    "751030307510": {
+      "name": "",
+      "sig": "UNK",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        }
+      ]
+    }
+  }
+}

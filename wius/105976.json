@@ -1,0 +1,111 @@
+{
+  "version": "1.0",
+  "description": "Auto-generated + merged WIU decoders",
+  "waysides": {
+    "710597638710": {
+      "name": "",
+      "sig": "CP",
+      "ind": [
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710597639010": {
+      "name": "",
+      "sig": "CP",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
+        },
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710597639310": {
+      "name": "",
+      "sig": "CP",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710597639510": {
+      "name": "",
+      "sig": "CP",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710597639710": {
+      "name": "",
+      "sig": "CP",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
+        },
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710597640110": {
+      "name": "",
+      "sig": "CP",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        }
+      ]
+    },
+    "710597640310": {
+      "name": "",
+      "sig": "CP",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        }
+      ]
+    },
+    "710597640510": {
+      "name": "",
+      "sig": "CP",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "switch": "1"
+        }
+      ]
+    }
+  }
+}

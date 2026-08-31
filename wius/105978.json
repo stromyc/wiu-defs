@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "description": "Auto-generated + merged WIU decoders",
+  "waysides": {
+    "710597862982": {
+      "name": "",
+      "sig": "CP",
+      "ind": [
+        {
+          "switch": "1"
+        }
+      ]
+    }
+  }
+}

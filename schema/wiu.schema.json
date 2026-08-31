@@ -1,0 +1,30 @@
+{
+ "type": "object",
+ "properties": {
+ "version": { "type": "string" },
+ "description": { "type": "string" },
+ "waysides": {
+ "type": "object",
+ "patternProperties": {
+ "^[0-9]+$": {
+ "type": "object",
+ "properties": {
+ "name": { "type": "string" },
+ "sig": { "type": "string" },
+ "ind": {
+ "type": "array",
+ "items": {
+ "type": "object"
+ }
+ },
+ "atcs": {
+ "type": "object"
+ }
+ },
+ "required": ["sig", "ind"]
+ }
+ }
+ }
+ },
+ "required": ["waysides"]
+}

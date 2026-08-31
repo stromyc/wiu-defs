@@ -1,0 +1,50 @@
+name: Auto Merge WIU Configurations
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        ref: ${{ github.head_ref }}
+        fetch-depth: 0
+        persist-credentials: true
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: pip install jsonschema
+
+    - name: Run beautify script
+      run: python scripts/beautify.py
+
+    - name: Run merge script
+      run: python scripts/merge.py
+
+    - name: Validate JSON
+      run: python scripts/validate.py
+
+    - name: Bump WIU versions
+      run: python scripts/bump_version.py
+
+    - name: Commit merged changes
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add wius/*.json
+        git commit -m "Auto-merged WIU updates" || echo "No changes"
+        git commit -m "Bump WIU versions [skip ci]" || echo "No version changes"
+
+    - name: Push changes
+      run: git push origin HEAD:${{ github.head_ref }}

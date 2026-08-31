@@ -1,0 +1,628 @@
+{
+  "description": "Canadian National Railway (CN) - Waukesha Subdivision",
+  "version": "0.0.0",
+  "waysides": {
+    "710343526505": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710343527505": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710343530005": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710343530006": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710343533005": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710343533006": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710343534005": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "switch": "1"
+        },
+        {
+          "switch": "2"
+        }
+      ]
+    },
+    "710343534505": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710343535505": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710343537005": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710343538505": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        }
+      ]
+    },
+    "710343539005": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710343539505": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710343542005": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
+        }
+      ]
+    },
+    "710343543505": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "N"
+        },
+        {
+          "signal": "S"
+        }
+      ]
+    },
+    "710343545505": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
+        }
+      ]
+    },
+    "710343546005": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
+        }
+      ]
+    },
+    "710343548005": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710343548505": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "N"
+        },
+        {
+          "signal": "S"
+        }
+      ]
+    },
+    "710343549005": {
+      "name": "S Vernon",
+      "sig": "CN",
+      "ind": [
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710343549505": {
+      "name": "N Vernon",
+      "sig": "CN",
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
+        }
+      ]
+    },
+    "710343550505": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
+        }
+      ]
+    },
+    "710343552005": {
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "S"
+        },
+        {
+          "signal": "NR"
+        },
+        {
+          "signal": "NN"
+        }
+      ],
+      "name": "Grand Ave",
+      "sig": "CN"
+    },
+    "710343553505": {
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "N"
+        },
+        {
+          "signal": "SN"
+        },
+        {
+          "signal": "SR"
+        }
+      ],
+      "name": "S Waukesha",
+      "sig": "CN"
+    },
+    "710343557005": {
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "NN"
+        },
+        {
+          "signal": "NR"
+        },
+        {
+          "signal": "S"
+        }
+      ],
+      "name": "N Waukesha",
+      "sig": "CN"
+    },
+    "710343557505": {
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "N"
+        },
+        {
+          "signal": "SR"
+        },
+        {
+          "signal": "SN"
+        }
+      ],
+      "name": "S Duplainville",
+      "sig": "CN"
+    },
+    "710343562005": {
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "S"
+        },
+        {
+          "signal": "NR"
+        },
+        {
+          "signal": "NN"
+        }
+      ],
+      "name": "N Duplainville",
+      "sig": "CN"
+    },
+    "710343565005": {
+      "ind": [
+        {
+          "signal": "N"
+        },
+        {
+          "signal": "S"
+        }
+      ],
+      "name": "N Sussex",
+      "sig": "CN"
+    },
+    "710343565505": {
+      "ind": [
+        {
+          "signal": "N"
+        },
+        {
+          "signal": "S"
+        }
+      ],
+      "name": "N Lisbon Road",
+      "sig": "CN"
+    },
+    "710343566005": {
+      "ind": [
+        {
+          "signal": "N"
+        },
+        {
+          "signal": "S"
+        }
+      ],
+      "name": "Willow Creek Rd",
+      "sig": "CN"
+    },
+    "710343566505": {
+      "ind": [
+        {
+          "signal": "N"
+        },
+        {
+          "signal": "S"
+        }
+      ],
+      "name": "Hubertus Rd",
+      "sig": "CN"
+    },
+    "710343567005": {
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "N"
+        },
+        {
+          "signal": "SN"
+        },
+        {
+          "signal": "SR"
+        }
+      ],
+      "name": "S Rugby",
+      "sig": "CN"
+    },
+    "710343568005": {
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "S"
+        },
+        {
+          "signal": "NN"
+        },
+        {
+          "signal": "NR"
+        }
+      ],
+      "name": "N Rugby",
+      "sig": "CN"
+    },
+    "710343568325": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710343568505": {
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "N"
+        },
+        {
+          "signal": "SN"
+        },
+        {
+          "signal": "SR"
+        }
+      ],
+      "name": "S Ackerville",
+      "sig": "CN"
+    },
+    "710343570005": {
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "S"
+        },
+        {
+          "signal": "NN"
+        },
+        {
+          "signal": "NR"
+        }
+      ],
+      "name": "N Ackerville",
+      "sig": "CN"
+    },
+    "710343570505": {
+      "name": "Slinger",
+      "sig": "CN",
+      "ind": [
+        {
+          "switch": "1"
+        },
+        {
+          "switch": "2"
+        },
+        {
+          "signal": "S1N"
+        },
+        {
+          "signal": "S1R"
+        },
+        {
+          "signal": "N2N"
+        },
+        {
+          "signal": "N2R"
+        }
+      ],
+      "note": "2sw+4sig CP on the Waukesha Sub between Allenton (north) and N Ackerville (south), with two WAMX connections. Serialized field roles, 24 bits fully consumed: sw1[0:2] sw2[2:4] S1N[4:9] S1R[9:14] N2N[14:19] N2R[19:24]. SW1 is the west/north switch (reverse route to WAMX-Horicon), SW2 the east/south switch (reverse route to WAMX-Milwaukee). S1* is the north-facing pair governing southbound moves, N2* the south-facing pair governing northbound; the N head of each pair reads with its switch Normal, the R head with it Reverse. Layout established 2026-08-26 over 3830 frames (rpi5-Util capture wiu_20260825-185319): the 1sw/3sig CP layout yields 0% in-vocabulary aspects here, this one 100%; all five switch 'I' reads sit between an N frame and an R frame. Operator ground truth the same day - a northbound had N2N Clear 12:59:32-13:05:24; S1R (WAMX-Horicon) showed Red over Green 13:10:08-13:25:08, its only non-STOP interval in the whole capture, with both switches Reverse; S1N held Yellow over Green 19:00:16-19:57:28. Head names and geography from the operator's track diagram. Was an auto-generated 3-switch stub before this."
+    },
+    "710343577005": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710343577505": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        }
+      ]
+    },
+    "710343579505": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        }
+      ]
+    },
+    "710343581005": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        }
+      ]
+    },
+    "710343582505": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        }
+      ]
+    },
+    "710343585505": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "1"
+        },
+        {
+          "switch": "1"
+        }
+      ]
+    },
+    "710343587505": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "N"
+        },
+        {
+          "signal": "S"
+        }
+      ]
+    }
+  }
+}
