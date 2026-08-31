@@ -220,7 +220,7 @@
       "note": "MP 72.8, confirmed 2026-08-31 by four operator sightings at MP 72.3 the same morning: NB 03:05 / 04:45 / 05:32 each knocked signal:1 down at +1:48 / +1:32 / +2:04, and SB CN 3285 at 07:12 knocked signal:2 down at -0:16. Different head per direction, no other wayside near more than one sighting. First confirmed milepost south of Grand Ave."
     },
     "710343543505": {
-      "name": "",
+      "name": "Oakdale Road",
       "sig": "CN",
       "ind": [
         {
@@ -229,7 +229,8 @@
         {
           "signal": "S"
         }
-      ]
+      ],
+      "note": "Oakdale Rd crossing; GPS 42.724549,-88.306489 (~MP 75.8). Only intermediate between N Burlington and S Midway; interp MP 76.0. Provisional - binding by geography, not a WIUID-confirmed sighting."
     },
     "710343545505": {
       "name": "S Midway",
