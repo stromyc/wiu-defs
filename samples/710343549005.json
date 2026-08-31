@@ -10,17 +10,17 @@
     },
     {
       "kind": "signal",
-      "label": "1",
+      "label": "N",
       "value": 3
     },
     {
       "kind": "signal",
-      "label": "2",
+      "label": "SN",
       "value": 15
     },
     {
       "kind": "signal",
-      "label": "3",
+      "label": "SR",
       "value": 15
     }
   ]
