@@ -796,6 +796,19 @@
         }
       ],
       "note": "Added 2026-08-31. 24-bit CP (60 frames, 2026-08-28), switch seen both N and R; 0 illegal on the sibling layout, dead tail. Lies between 539505 and 542005, i.e. just south of S Burlington."
+    },
+    "710343546505": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "N"
+        },
+        {
+          "signal": "S"
+        }
+      ],
+      "note": "Intermediate ~MP 83 (loc 4650, between N Midway and S Vernon). 2-byte, [N,S]; 99.9% known aspects over 19758 frames. Added 2026-08-31 during Train B knockdown watch."
     }
   }
 }
