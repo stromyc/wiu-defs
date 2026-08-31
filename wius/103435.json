@@ -392,10 +392,10 @@
           "signal": "S"
         },
         {
-          "signal": "NR"
+          "signal": "NN"
         },
         {
-          "signal": "NN"
+          "signal": "NR"
         }
       ],
       "atcs": {
@@ -437,13 +437,13 @@
           "switch": ""
         },
         {
+          "signal": "S"
+        },
+        {
           "signal": "NN"
         },
         {
           "signal": "NR"
-        },
-        {
-          "signal": "S"
         }
       ],
       "atcs": {
