@@ -8,6 +8,28 @@ with a `samples/<wiuid>.json` golden test before committing.
 Validated-good baseline: CN switched CPs `[SW][SIG1=lone][SIG2=normal][SIG3=reverse]`.
 
 
+## RESOLVED — CN batch 1 (2026-08-30, data-gated from rpi5-ptc + rpi5-Util captures)
+
+Proven with `scripts/analyze_cp_order.py` over full historical captures; each locked
+with `samples/<wiuid>.json`. `switch % valid` = fraction of frames whose switch reads {1,2}.
+
+Reordered to switch-first (switch reads Normal=2 in steady state):
+- **710343537005** `[sig,switch]` → `[switch,sig]`  (99.7% vs 87.3%, 1209 fr)
+- **710343585505** `[sig,switch]` → `[switch,sig]`  (99.8% vs 70.8%, 636 fr)
+- **710343530005** `[sig,sig,switch]` → `[switch,sig,sig]`  (70.5% vs 17.6%, 607 fr; rest are idle 10BF)
+
+Retyped to two signals (phantom switch — invalid in ALL orderings; 3-field ones
+had a 31/all-ones padding tail, confirming no real 3rd field):
+- **710343533005** `[sig,switch]` → `[sig,sig]`  (switch ≤24.7%, 17649 fr)
+- **710343533006** `[sig,switch]` → `[sig,sig]`  (switch ≤11.3%, 1473 fr)
+- **710343577005** `[sig,switch]` → `[sig,sig]`  (switch ≤41.7%, 11003 fr)
+- **710343530006** `[sig,sig,switch]` → `[sig,sig]`  (switch ≤10.4%, 556 fr)
+- **710343539005** `[sig,sig,switch]` → `[sig,sig]`  (switch ≤20.8%, 2815 fr)
+- **710343548005** `[sig,sig,switch]` → `[sig,sig]`  (switch ≤26.0%, 8931 fr)
+
+Still open: field cross-check (aspect names) against a physical observation for the
+above; **710343534505** left as-is (switch valid both ways = real switch, inconclusive).
+
 ## A. REVERSED switched-CP suspects — switch present but NOT field 0, ≥2 signals. Likely auto-gen put switches last; validate switch-first per capture.  (29)
 
 - **[CN] 710343530005** : `['signal', 'signal', 'switch']`

@@ -1,0 +1,17 @@
+{
+  "wiuid": "710343577005",
+  "data": "E63F",
+  "note": "RETYPE to two signals: 'switch' invalid both ways (<42% ceiling, 11003 frames). Field cross-check pending.",
+  "expected": [
+    {
+      "kind": "signal",
+      "label": "1",
+      "value": 7
+    },
+    {
+      "kind": "signal",
+      "label": "2",
+      "value": 3
+    }
+  ]
+}

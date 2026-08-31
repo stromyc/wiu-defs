@@ -1,0 +1,22 @@
+{
+  "wiuid": "710343530005",
+  "data": "70BF",
+  "note": "REORDER switch-first: switch reads Normal(2); 70.5% vs 17.6% over 607 frames (remainder are idle 10BF frames). Field cross-check pending.",
+  "expected": [
+    {
+      "kind": "switch",
+      "label": "1",
+      "value": 2
+    },
+    {
+      "kind": "signal",
+      "label": "1",
+      "value": 3
+    },
+    {
+      "kind": "signal",
+      "label": "2",
+      "value": 26
+    }
+  ]
+}

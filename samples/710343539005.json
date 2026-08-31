@@ -1,0 +1,17 @@
+{
+  "wiuid": "710343539005",
+  "data": "163F",
+  "note": "TRIM phantom switch -> two signals: 3rd field padding(31); switch invalid both ways (<21%, 2815 frames). Field cross-check pending.",
+  "expected": [
+    {
+      "kind": "signal",
+      "label": "1",
+      "value": 8
+    },
+    {
+      "kind": "signal",
+      "label": "2",
+      "value": 3
+    }
+  ]
+}
