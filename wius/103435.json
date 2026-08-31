@@ -331,10 +331,10 @@
       "sig": "CN",
       "ind": [
         {
-          "signal": "1"
+          "signal": "N"
         },
         {
-          "signal": "2"
+          "signal": "S"
         }
       ]
     },
@@ -349,10 +349,10 @@
           "signal": "S"
         },
         {
-          "signal": "NN"
+          "signal": "NR"
         },
         {
-          "signal": "NR"
+          "signal": "NN"
         }
       ],
       "atcs": {
@@ -394,13 +394,13 @@
           "switch": ""
         },
         {
-          "signal": "S"
-        },
-        {
           "signal": "NN"
         },
         {
           "signal": "NR"
+        },
+        {
+          "signal": "S"
         }
       ],
       "atcs": {
@@ -415,7 +415,7 @@
       "sig": "CN",
       "ind": [
         {
-          "switch": "5"
+          "switch": ""
         },
         {
           "signal": "N"
@@ -489,7 +489,7 @@
       ]
     },
     "710343566005": {
-      "name": "Willow Creek Rd MP 112.16",
+      "name": "Willow Creek Rd",
       "sig": "CN",
       "ind": [
         {
@@ -501,7 +501,7 @@
       ]
     },
     "710343566505": {
-      "name": "Hubertus Rd area (N of MP 113.37)",
+      "name": "Hubertus Rd",
       "sig": "CN",
       "ind": [
         {
@@ -573,20 +573,20 @@
       ]
     },
     "710343568505": {
-      "name": "",
+      "name": "S Ackerville",
       "sig": "CN",
       "ind": [
         {
           "switch": ""
         },
         {
-          "signal": "1"
+          "signal": "N"
         },
         {
-          "signal": "2"
+          "signal": "SN"
         },
         {
-          "signal": "3"
+          "signal": "SR"
         }
       ]
     },

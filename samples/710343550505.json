@@ -5,12 +5,12 @@
   "expected": [
     {
       "kind": "signal",
-      "label": "1",
+      "label": "N",
       "value": 8
     },
     {
       "kind": "signal",
-      "label": "2",
+      "label": "S",
       "value": 7
     }
   ]
