@@ -1,7 +1,7 @@
 {
   "wiuid": "710343534005",
   "data": "5F7BDE",
-  "note": "2-switch interlocking + 3 heads; aspect-fit [sw,sw,sig,sig,sig]=97.8% (17619 fr). Was truncated to [sw,sw] (4 of 24 bits). 4th 5-bit field goes UNK -> not a head. Field cross-check pending.",
+  "note": "2-switch interlocking + 4 heads = 24 bits exactly (no spare). All 4 sig fields show signal fingerprint (MSB ~0, aspect-distributed). 17659 fr rpi5-ptc. sig4 reads value 4 ~9% (uncatalogued CN aspect, investigate). Field cross-check pending.",
   "expected": [
     {
       "kind": "switch",
@@ -26,6 +26,11 @@
     {
       "kind": "signal",
       "label": "3",
+      "value": 15
+    },
+    {
+      "kind": "signal",
+      "label": "4",
       "value": 15
     }
   ]
