@@ -77,9 +77,13 @@ def main():
     ap.add_argument("--wius", default=os.path.join(os.path.dirname(__file__), "..", "wius"))
     args = ap.parse_args()
 
-    # current ind (kinds) per WIUID
+    # current ind (kinds) per WIUID. Accepts both the repo's flat wius/ and the
+    # ITC-STACK config/shared/wius/<sub>/ layout; only <digits>.json are read.
+    import re
     kinds_of = {}
-    for f in glob.glob(os.path.join(args.wius, "*.json")):
+    for f in glob.glob(os.path.join(args.wius, "**", "*.json"), recursive=True):
+        if not re.fullmatch(r"\d+\.json", os.path.basename(f)):
+            continue
         for wid, e in json.load(open(f)).get("waysides", {}).items():
             kinds_of[str(wid)] = [next(iter(s)) for s in e.get("ind", []) if s]
 
