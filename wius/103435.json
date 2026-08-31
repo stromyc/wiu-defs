@@ -230,7 +230,7 @@
           "signal": "S"
         }
       ],
-      "note": "Oakdale Rd crossing; GPS 42.724549,-88.306489 (~MP 75.8). Only intermediate between N Burlington and S Midway; interp MP 76.0. Provisional - binding by geography, not a WIUID-confirmed sighting."
+      "note": "Oakdale Rd crossing; GPS 42.724549,-88.306489 (~MP 75.8). Confirmed by Chris 2026-08-31: sole real intermediate between N Burlington (loc4250) and S Midway (loc4550) per bracket scan (224k frames vs two single-frame noise hits with invalid track digits)."
     },
     "710343545505": {
       "name": "S Midway",
