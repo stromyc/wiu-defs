@@ -132,11 +132,17 @@ def main():
         cur, swf = scores["current"], scores["switch_first"]
         cur_p = (cur[0] / cur[1]) if cur[1] else -1
         swf_p = (swf[0] / swf[1]) if swf[1] else -1
-        verdict = ("SWITCH-FIRST (reversed)" if swf_p > cur_p + 0.05
-                   else "current OK" if cur_p >= swf_p else "inconclusive")
-        # identical if switch already first
-        if candidates(kinds_of[wid])["current"] == candidates(kinds_of[wid])["switch_first"]:
+        cand = candidates(kinds_of[wid])
+        if cand["current"] == cand["switch_first"]:
             verdict = "(switch already first)"
+        elif max(cur_p, swf_p) < 0.5:
+            verdict = "SWITCH INVALID BOTH WAYS -> likely mistyped (no real switch)"
+        elif swf_p > cur_p + 0.05:
+            verdict = "SWITCH-FIRST (reversed)"
+        elif cur_p >= swf_p:
+            verdict = "current OK"
+        else:
+            verdict = "inconclusive"
         print(f"{wid:13} {len(fr):6}  {pct(cur):>18}  {pct(swf):>18}  {verdict}")
 
     print("\nA clean 'SWITCH-FIRST (reversed)' means: current template sprays the switch "
