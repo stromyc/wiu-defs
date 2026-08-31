@@ -1,50 +1,38 @@
-# Occupancy field (`occ`) — staged, NOT yet on main
+# Occupancy field (`occ`) — CONFIRMED mapping, 21 CN waysides live
 
-Branch `occ-field`. Adds a 2-bit track-circuit field after the signals on every
-wayside that carries one. Discovered/validated with the capture side (they
-reconstructed movements from it directly). DO NOT merge to main or deploy until
-BOTH: (a) the decoder supports `occ`, and (b) the ring mapping below is confirmed —
-otherwise the fleet's `wiu_decode.py` breaks on an unknown field kind.
+2-bit track circuit after the signals: `used=10` → occ at [10:12] (2-signal),
+`used=17` → [17:19] (switch+3sig). Value = bit0 + 2*bit1 (LSB-first in field),
+bits MSB-first across payload. Fixtures (MUST hold): `761F`→2, `C3AF`→1.
 
-## Scope (this branch)
-22 **CN** waysides only. `occ` sits immediately after the signal fields:
-- 2-signal intermediates → `used=10`, occ at bits **[10:12]**
-- switch + 3-signal CPs (526505, 537005, 557505) → `used=17`, occ at bits **[17:19]**
-
-CP (13) and UP (6) also show a varying field there, but their defs are still
-mistyped/truncated, so `[used:used+2]` lands on real signal/switch bits, NOT the
-circuit. **CP/UP occ waits on the CP/UP def-fix batch** — do not add it blind.
-
-## Value → state (STAGED — confirm against the capture side before finalizing)
-`take_field` is LSB-first, so value = bit0 + 2*bit1:
-| value | bits (b10,b11) | staged meaning |
+## Value → state (CONFIRMED against SB+NB frames by the capture side)
+| value | bits | state (GEOGRAPHIC — never directional) |
 |---|---|---|
-| 3 | (1,1) | Clear / unoccupied |
-| 2 | (0,1) | Occupied — north end |
-| 0 | (0,0) | Occupied — full |
-| 1 | (1,0) | Occupied — south end / tail |
+| 3 | (1,1) | Clear (both sub-circuits unoccupied) |
+| 2 | (0,1) | N-end occupied |
+| 1 | (1,0) | S-end occupied |
+| 0 | (0,0) | Both occupied |
 
-Ring (capture side): `(1,1)→(0,1)→(0,0)→(1,0)→(1,1)` = north-end-first = **southbound**;
-reverse = northbound. Direction comes from the state *sequence*, not one frame.
-**Hold the names + direction logic until they confirm which of 0/1/2 is leading vs tail.**
+Direction lives in the TRANSITION out of 3, not the value:
+`3→2 = SOUTHBOUND` (enters north end first), `3→1 = NORTHBOUND`.
 
-## Decoder patch (wiu_decode.py — itc-stack, all machines; apply on confirm)
-```python
-FIELD_WIDTHS = {"signal": 5, "switch": 2, "occ": 2}
-OCC_STATES = {3: "Clear", 2: "Occupied (N)", 0: "Occupied", 1: "Occupied (S)"}  # STAGED
-# in the annotate/attach-names step, alongside signal/switch:
-elif kind == "occ":
-    f["occupancy"] = OCC_STATES.get(f["value"])
-# direction: keep prev occ per WIUID; on a transition, N-end-first => "SB", else "NB"
-```
-Mirror `FIELD_WIDTHS["occ"]=2` into scripts/selftest.py (done on this branch) and any
-other decoder copy (React lib/decode.js for layer 3).
+## Deployment hazards (from the capture side — honor all)
+1. Name states geographically (CLEAR/N_END/S_END/BOTH). Direction is a transition,
+   computed downstream — do NOT bake it into the state.
+2. **Bit order is NOT universal.** S Duplainville (557505) is inverted (b17=south,
+   b18=north) per SDUP-OCCUPANCY-20260830 §5 — DEFERRED from this batch until its
+   fixtures are in hand.
+3. **Dead field reads as permanently occupied.** N Sussex (565005) carries the field
+   structurally but never populates it — sits at value 0 forever (NSUSSEX-OCCUPANCY-
+   20260826). Gate on liveness: a live field rests at 3 most of the time and shows
+   full cycles. Our enum already excluded dead fields, so the 21 here are all live.
+4. Bracket rule: onset is first-OBSERVED at a frame; true transition lies back to the
+   previous frame (4850 brackets 24–820 s). Timestamp the observation, not the event.
 
-## Deploy order (when ready)
-1. Confirm ring mapping.
-2. Apply decoder patch to `wiu_decode.py`, deploy to EC2 + Pis (itc-stack path).
-3. Merge `occ-field` → main; fleet `git pull` + restart decoders.
-4. Layer 3: React board occupancy indicator (separate, LiveTrainTracking repo).
-
-Order matters: decoder must understand `occ` BEFORE the defs carrying it reach a
-running decoder.
+## Status
+- 21 CN waysides carry `occ` (557505 deferred). selftest 18/18 (occ=2 + prefix match).
+- Decoder: FIELD_WIDTHS["occ"]=2 + OCC_STATES + annotate branch (occupancy state only;
+  direction is a stateful fast-follow). Applied to EC2 /home/ubuntu/wiu_decode.py.
+- `occ` is the LAST field, so unpatched decoders decode all signals and skip occ —
+  backward-compatible fleet-wide.
+- TODO: direction logic (per-WIUID transition tracking); re-enable 557505 (needs
+  fixtures); patch Pi decoders; React board occupancy indicator (layer 3).
