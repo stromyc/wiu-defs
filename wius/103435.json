@@ -301,22 +301,7 @@
       "note": "Named 2026-08-31 on the same basis as 545505, which it is paired with; see that note. Timing anchored on 542005=72.8 gives MP 81.2 against Midway's 82.3. NOT S Vernon: three waysides lie between it and N Vernon, and on 2026-08-30 a train knocked down 548005 and 548505 on the main and only then took the diverging route at 549005 into the Vernon siding, coming out at N Vernon 8 min later. The 2026-08-10 LTT crosswalk pinning this ID `s_vernon` at MP 89.7 is wrong on that evidence and should be corrected wherever it was handed downstream. S Vernon is 549005."
     },
     "710343548005": {
-      "name": "",
-      "sig": "CN",
-      "ind": [
-        {
-          "signal": "1"
-        },
-        {
-          "signal": "2"
-        },
-        {
-          "occ": ""
-        }
-      ]
-    },
-    "710343548505": {
-      "name": "",
+      "name": "Mukwonago",
       "sig": "CN",
       "ind": [
         {
@@ -328,7 +313,24 @@
         {
           "occ": ""
         }
-      ]
+      ],
+      "note": "Timetable location 'Mukwonago' (loc 4800), MP 86. Named by Chris 2026-09-01. Relabeled numeric [1,2] -> [N,S] positional, not yet field-verified. N/S Mukwonago are 548505/546505."
+    },
+    "710343548505": {
+      "name": "N Mukwonago",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "N"
+        },
+        {
+          "signal": "S"
+        },
+        {
+          "occ": ""
+        }
+      ],
+      "note": "N end of Mukwonago (loc 4850), MP 87.8. Named by Chris 2026-09-01."
     },
     "710343549005": {
       "name": "S Vernon",
@@ -864,7 +866,7 @@
       "note": "Added 2026-08-31. 24-bit CP (60 frames, 2026-08-28), switch seen both N and R; 0 illegal on the sibling layout, dead tail. Lies between 539505 and 542005, i.e. just south of S Burlington."
     },
     "710343546505": {
-      "name": "",
+      "name": "S Mukwonago",
       "sig": "CN",
       "ind": [
         {
@@ -874,7 +876,7 @@
           "signal": "S"
         }
       ],
-      "note": "Intermediate ~MP 83 (loc 4650, between N Midway and S Vernon). 2-byte, [N,S]; 99.9% known aspects over 19758 frames. Added 2026-08-31 during Train B knockdown watch."
+      "note": "S end of Mukwonago (loc 4650), MP 83.2. Named by Chris 2026-09-01. Intermediate, [N,S], no occ field. 99.9% known aspects over 19758 frames."
     }
   }
 }
