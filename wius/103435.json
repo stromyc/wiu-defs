@@ -686,19 +686,20 @@
       "note": "2sw+4sig CP on the Waukesha Sub between Allenton (north) and N Ackerville (south), with two WAMX connections. Serialized field roles, 24 bits fully consumed: sw1[0:2] sw2[2:4] S1N[4:9] S1R[9:14] N2N[14:19] N2R[19:24]. SW1 is the west/north switch (reverse route to WAMX-Horicon), SW2 the east/south switch (reverse route to WAMX-Milwaukee). S1* is the north-facing pair governing southbound moves, N2* the south-facing pair governing northbound; the N head of each pair reads with its switch Normal, the R head with it Reverse. Layout established 2026-08-26 over 3830 frames (rpi5-Util capture wiu_20260825-185319): the 1sw/3sig CP layout yields 0% in-vocabulary aspects here, this one 100%; all five switch 'I' reads sit between an N frame and an R frame. Operator ground truth the same day - a northbound had N2N Clear 12:59:32-13:05:24; S1R (WAMX-Horicon) showed Red over Green 13:10:08-13:25:08, its only non-STOP interval in the whole capture, with both switches Reverse; S1N held Yellow over Green 19:00:16-19:57:28. Head names and geography from the operator's track diagram. Was an auto-generated 3-switch stub before this."
     },
     "710343577005": {
-      "name": "",
+      "name": "Arthur Road",
       "sig": "CN",
       "ind": [
         {
-          "signal": "1"
+          "signal": "N"
         },
         {
-          "signal": "2"
+          "signal": "S"
         },
         {
           "occ": ""
         }
-      ]
+      ],
+      "note": "Intermediate ~1.5 mi N of Slinger (122.6). GPS 43.35284975,-88.29220276 -> MP 124.2. Named by Chris 2026-08-31. Labels N/S positional per the intermediate convention (Hubertus/Oakdale), not yet field-verified."
     },
     "710343577505": {
       "name": "",
@@ -743,19 +744,20 @@
       ]
     },
     "710343582505": {
-      "name": "",
+      "name": "Cedar Lake",
       "sig": "CN",
       "ind": [
         {
-          "signal": "1"
+          "signal": "N"
         },
         {
-          "signal": "2"
+          "signal": "S"
         },
         {
           "occ": ""
         }
-      ]
+      ],
+      "note": "Intermediate N of Arthur Road. GPS 43.38035111,-88.30970840 -> 3.66 mi N of Slinger = MP 126.2. Named 'likely Cedar Lake' by Chris 2026-08-31. Labels N/S positional, not yet field-verified."
     },
     "710343585505": {
       "name": "",
@@ -776,7 +778,7 @@
       ]
     },
     "710343587505": {
-      "name": "",
+      "name": "Allenton",
       "sig": "CN",
       "ind": [
         {
@@ -788,7 +790,8 @@
         {
           "occ": ""
         }
-      ]
+      ],
+      "note": "Intermediate N of Cedar Lake. GPS 43.42078484,-88.34200034 -> 6.85 mi N of Slinger = MP 129.6. Named by Chris 2026-08-31. Already carried N/S labels."
     },
     "710343542505": {
       "name": "N Burlington",
