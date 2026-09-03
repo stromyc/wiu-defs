@@ -28,25 +28,63 @@
       "sig": "CN",
       "ind": [
         {
-          "signal": "1"
+          "signal": "N"
         },
         {
-          "signal": "2"
+          "signal": "S"
         },
         {
           "occ": ""
         }
       ]
     },
-    "710343530005": {
+    "710343529005": {
       "name": "",
       "sig": "CN",
       "ind": [
+        {
+          "switch": ""
+        },
         {
           "signal": "1"
         },
         {
           "signal": "2"
+        },
+        {
+          "signal": "3"
+        }
+      ],
+      "note": "Added 2026-08-31. Heard first on 2026-08-31 (7 frames); 24-bit, decodes 0 illegal on the sibling CP layout with a dead 7-bit tail. Position in the ladder only - unnamed, unplaced."
+    },
+    "710343529505": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
+        }
+      ],
+      "note": "Added 2026-08-31. 24-bit control point, 627 frames this week, previously heard but undefined. 17 of its 18 payloads decode to legal values with a dead 7-bit tail; the exception is aspect code 16 on signal:1 (54 frames), which appears ONLY with the switch Reverse, alongside 4 Diverging Clear and 18 Diverging Approach - so 16 is very likely another diverging-family aspect missing from decode.py's CN_ASPECT. Not named, not placed."
+    },
+    "710343530005": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "N"
+        },
+        {
+          "signal": "S"
         },
         {
           "occ": ""
@@ -58,10 +96,10 @@
       "sig": "CN",
       "ind": [
         {
-          "signal": "1"
+          "signal": "N"
         },
         {
-          "signal": "2"
+          "signal": "S"
         },
         {
           "occ": ""
@@ -73,10 +111,10 @@
       "sig": "CN",
       "ind": [
         {
-          "signal": "1"
+          "signal": "N"
         },
         {
-          "signal": "2"
+          "signal": "S"
         },
         {
           "occ": ""
@@ -88,10 +126,10 @@
       "sig": "CN",
       "ind": [
         {
-          "signal": "1"
+          "signal": "N"
         },
         {
-          "signal": "2"
+          "signal": "S"
         },
         {
           "occ": ""
@@ -179,15 +217,31 @@
         }
       ]
     },
+    "710343538005": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "N"
+        },
+        {
+          "signal": "S"
+        },
+        {
+          "occ": ""
+        }
+      ],
+      "note": "Added 2026-08-31. 16-bit intermediate (126 frames, 2026-08-28); 0 illegal on [signal,signal], 126/126 illegal on the CP layout. Head order 1/2 is arbitrary - N/S not yet determined. Its tail bit [10] toggles, which verify_templates.py reports as FAIL; that is the documented [10:12] track-occupancy quadrature every 16-bit intermediate on this sub carries, not a short template."
+    },
     "710343538505": {
       "name": "",
       "sig": "CN",
       "ind": [
         {
-          "signal": "1"
+          "signal": "N"
         },
         {
-          "signal": "2"
+          "signal": "S"
         },
         {
           "occ": ""
@@ -199,10 +253,10 @@
       "sig": "CN",
       "ind": [
         {
-          "signal": "1"
+          "signal": "N"
         },
         {
-          "signal": "2"
+          "signal": "S"
         },
         {
           "occ": ""
@@ -227,6 +281,25 @@
         }
       ]
     },
+    "710343541105": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "1"
+        },
+        {
+          "signal": "2"
+        },
+        {
+          "signal": "3"
+        }
+      ],
+      "note": "Added 2026-08-31. 24-bit CP (60 frames, 2026-08-28), switch seen both N and R; 0 illegal on the sibling layout, dead tail. Lies between 539505 and 542005, i.e. just south of S Burlington."
+    },
     "710343542005": {
       "name": "S Burlington",
       "sig": "CN",
@@ -244,10 +317,29 @@
           "signal": "SR"
         }
       ],
-      "note": "MP 72.8, confirmed 2026-08-31 by four operator sightings at MP 72.3 the same morning: NB 03:05 / 04:45 / 05:32 each knocked signal:1 down at +1:48 / +1:32 / +2:04, and SB CN 3285 at 07:12 knocked signal:2 down at -0:16. Different head per direction, no other wayside near more than one sighting. First confirmed milepost south of Grand Ave."
+      "note": "Name agreed with the operator 2026-08-31. No milepost is asserted as this WIU's position; an estimate appears below, marked as one. What was actually observed: four operator sightings at MP 72.3 on 2026-08-31 - NB 03:05, 04:45, 05:32 and SB CN 3285 07:12 - and this wayside knocked down on each, on signal:1 for every northbound (+1:48, +1:32, +2:04) and signal:2 for the southbound (-0:16), with no other wayside on the ladder near more than one sighting. Reception cadence was 16 s, so those offsets are real, not detection lag. That places this wayside a short distance NORTH of MP 72.3 - under a mile at any plausible speed - which is where the operator puts S Burlington. The milepost of S Burlington itself is the operator's figure, not a measurement of this WIU. ESTIMATED position: north of MP 72.3 by under a mile at any plausible speed, which agrees with the operator's S Burlington. No estimate of this WIU's own milepost is offered beyond that bound."
+    },
+    "710343542505": {
+      "name": "N Burlington",
+      "sig": "CN",
+      "ind": [
+        {
+          "switch": ""
+        },
+        {
+          "signal": "S"
+        },
+        {
+          "signal": "NN"
+        },
+        {
+          "signal": "NR"
+        }
+      ],
+      "note": "Named 2026-08-31 on the operator's judgement, from THREE FRAMES - 2026-08-28 07:07-07:10, the only reception ever, on either receiver. No milepost is asserted as fact; an estimate appears below, marked as one. Basis for the name: it is the wayside immediately NORTH of 542005 (S Burlington) in the WIUID ladder, every confirmed siding on this sub has its two ends adjacent in that ladder, and its 24-bit payload validates on the sibling control-point layout with a dead 7-bit tail. Checked 2026-08-31 against the alternative that igw misresolved a 542005 frame: rejected - its sequence counter runs a stable +20 ahead of 542005's across three and a half minutes, and two of its three frames carry 7D8F00, which 542005 never sent in that window. rpi5-Util has zero receptions and cannot corroborate. There is no sighting of this wayside; if one contradicts the name, this is the first name to drop. ESTIMATED position: immediately north of 542005 by ladder order only - three frames give nothing to time. The operator puts N Burlington at roughly MP 73.9; that is their figure for the location, not a measurement of this WIU."
     },
     "710343543505": {
-      "name": "Oakdale Road",
+      "name": "Washington Ave",
       "sig": "CN",
       "ind": [
         {
@@ -260,7 +352,7 @@
           "occ": ""
         }
       ],
-      "note": "Oakdale Rd crossing; GPS 42.724549,-88.306489 (~MP 75.8). Confirmed by Chris 2026-08-31: sole real intermediate between N Burlington (loc4250) and S Midway (loc4550) per bracket scan (224k frames vs two single-frame noise hits with invalid track digits)."
+      "note": "Washington Ave, MP 77.6 (operator milepost for the location). IDENTIFIED 2026-09-03 by knockdown timing, after the operator confirmed the two candidates: Oak Knoll Road MP 75.9 (42.72437427473365, -88.30633610470042) and Washington Ave MP 77.6 (42.748335706475466, -88.30382519746779), 1.66 mi apart by GPS against 1.70 by milepost. METHOD: a signal drops when a train passes it, so its knockdown time is a position fix. Interpolating 543505's own knockdown between S Burlington (72.8, four operator sightings) and S Midway (80.1), transits paired first so each measurement is one train: northbound MP 77.21 (n=76, IQR 75.78-77.57), southbound MP 77.73 (n=72, IQR 77.51-78.10), combined 77.47. Washington Ave is 0.13 mi from that, Oak Knoll Road 1.57 mi. Robust to the S Midway anchor: sweeping it 79.7 to 82.3 moves the answer 76.97 to 78.55 and it stays nearer Washington Ave at every value. CORROBORATION: the occupancy quadrature reports the block on each side, so its entry points are the NEIGHBOURING signals - measured S entry MP 75.8 (n=80) and N entry MP 79.9 (n=61), which is Oak Knoll 75.9 and S Midway 80.1 to within 0.1 and 0.2 mi. That brackets 77.6 and fits no other position. SECOND INDEPENDENT LINE - head arrangement, and it agrees. The operator confirms the two signals are MIRRORED. Oak Knoll: 3-light vertical facing south for northbound traffic, 3-light over 2-light facing north for southbound. Washington Ave: 3-light over 2-light facing south for northbound traffic, 3-light vertical facing north for southbound. So the multi-head face is on the SOUTH side at Washington Ave and on the NORTH side at Oak Knoll. This WIU's N-labelled head carries the diverging family - aspect 17 in 3201 frames, 13 in 718 - and its S-labelled head carries none. The N-labelled head is the SOUTH-FACING head: a head protects the block a train enters after reading it, so the head governing entry to the north block is the one a northbound reads, and V1 established the N-labelled field is restrictive whenever the north block is occupied. South-facing head multi-head = Washington Ave. ALSO NOT USED: location number 4350 interpolates to MP 75.9 between 4200=72.8 and 4550=80.1. That scale is nonlinear here - 4200 to 4250 is 0.022 mi/unit, 4250 to 4350 is 0.037, 4350 to 4550 is 0.0125 - so it cannot resolve 1.7 mi and its apparent support for Oak Knoll is an artifact. REJECTED: the external wiu-def repo names this 'Oakdale Road' and calls it the sole intermediate in the span. There are two, both operator-confirmed, and its own coordinate for 'Oakdale Rd' sits 76 ft from Oak Knoll Road - a different signal 1.65 mi from this one. The name is a corruption of Oak Knoll Road attached to the wrong wayside. OAK KNOLL ROAD IS NOT RECEIVED. Its WIUID must fall between 542505 (N Burlington) and 543505; a sweep of all 11 captures finds NO id in that range at all. The earlier lead 710343544328 (one junk frame, 2026-08-26) is numerically NORTH of this wayside, in a span the operator says holds no intermediate, so it is not Oak Knoll and should be treated as noise."
     },
     "710343545505": {
       "name": "S Midway",
@@ -279,7 +371,7 @@
           "signal": "SR"
         }
       ],
-      "note": "Named 2026-08-31 by elimination, not by a sighting. Between S Burlington (542005, pinned the same day by four operator sightings) and S Vernon (549005) the archive contains exactly ONE well-received pair of 24-bit control points - this and 546005 - and the operator siding list has exactly one siding in that stretch, Midway MP 80.1-82.3. The pair also works its switches together: 19 of 21 reverse windows coupled. Knockdown timing anchored on 542005=72.8 independently gives MP 79.7. The 2026-08-09 operator series (MOVEMENT-20260809 sec 5, NB#1) interpolates this ID to MP 88.4 instead; that is rejected because 88-89 falls inside the Vernon siding, whose ends are 549005/549505 - which is the lagged-relay explanation that document's own sec 6.2 offered for the same conflict."
+      "note": "Named 2026-08-31 by elimination on the operator's instruction, NOT by a sighting. ESTIMATED MP 78.9. Basis for the name: between S Burlington (542005) and S Vernon (549005) the archive contains exactly one well-received pair of adjacent 24-bit control points - this and 546005 - and the operator's siding list has exactly one siding in that stretch, Midway. The pair works its switches together: 19 of 21 reverse-switch windows coupled. Second leg, from track circuits rather than reception: across 22 meets this week a train enters at one of these two ends, occupies NO track circuit for the length of its hold - it is on siding track - and leaves at the other end while the opposing train runs the main past the flanking circuits at 543505 and 546505. COMPETING ESTIMATE: the 2026-08-09 operator series (MOVEMENT-20260809 sec 5, NB#1) interpolates this ID to about MP 88.4, 9.5 mi north of the estimate above. Both are estimates; sec 6.2 of that document offers the reconciliation - its MP readouts may be lagged relays. Unresolved. ESTIMATE METHOD: knockdown times chained north from S Burlington to S Vernon and scaled between those two operator-supplied mileposts. Accuracy where it can be checked: 0.6 mi at Oak Knoll Rd, 1.2-1.9 mi at the Midway ends. Treat as +/-2 mi. NOT a sighting."
     },
     "710343546005": {
       "name": "N Midway",
@@ -298,7 +390,23 @@
           "signal": "NR"
         }
       ],
-      "note": "Named 2026-08-31 on the same basis as 545505, which it is paired with; see that note. Timing anchored on 542005=72.8 gives MP 81.2 against Midway's 82.3. NOT S Vernon: three waysides lie between it and N Vernon, and on 2026-08-30 a train knocked down 548005 and 548505 on the main and only then took the diverging route at 549005 into the Vernon siding, coming out at N Vernon 8 min later. The 2026-08-10 LTT crosswalk pinning this ID `s_vernon` at MP 89.7 is wrong on that evidence and should be corrected wherever it was handed downstream. S Vernon is 549005."
+      "note": "Named 2026-08-31 on the same basis as 545505, which it is paired with; see that note. ESTIMATED MP 80.4; the 2026-08-09 series gives about 89.3 for this ID instead, and that conflict is unresolved. NOT S Vernon, and that does not depend on any milepost: three waysides lie between it and N Vernon in the ladder, and on 2026-08-30 a train occupied the track circuits at 548005 and 548505 on the MAIN and only then took the diverging route at 549005 into the Vernon siding, coming out at N Vernon 8 min later. The 2026-08-10 LTT crosswalk pinning this ID `s_vernon` is wrong on that evidence and should be corrected wherever it was handed downstream. S Vernon is 549005. ESTIMATE METHOD: knockdown times chained north from S Burlington to S Vernon and scaled between those two operator-supplied mileposts. Accuracy where it can be checked: 0.6 mi at Oak Knoll Rd, 1.2-1.9 mi at the Midway ends. Treat as +/-2 mi. NOT a sighting."
+    },
+    "710343546505": {
+      "name": "S Mukwonago",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "N"
+        },
+        {
+          "signal": "S"
+        },
+        {
+          "occ": ""
+        }
+      ],
+      "note": "Added 2026-08-31. 16-bit intermediate, 17,698 frames this week, previously heard but undefined - one of the three intermediates between N Midway and S Vernon (CN 4650 by the signal number in its WIUID). 0 out-of-table aspects across all 30 payloads. Its [10:12] track circuit works: 111 occupancy onsets this week, every one of them coinciding with a signal knockdown in the same second. verify_templates.py reports FAIL because bits [10,11] toggle - that is the track circuit, which every 16-bit intermediate here carries and the template convention leaves out. Bits [14,15] also toggle, rarely (19 frames of 17,698); unexplained, and worth a look if anyone extends the 16-bit layout. ESTIMATED MP 82.2 - see below. First of the three intermediates north of the Midway pair. Sits only 50 signal-numbers north of 546005, the spacing every siding-END PAIR uses here, where other intermediate gaps run 100-150 - so it may be a signal at the north end of the siding rather than out on the main. ESTIMATE METHOD: knockdown times chained north from S Burlington to S Vernon and scaled between those two operator-supplied mileposts. Accuracy where it can be checked: 0.6 mi at Oak Knoll Rd, 1.2-1.9 mi at the Midway ends. Treat as +/-2 mi. NOT a sighting."
     },
     "710343548005": {
       "name": "Mukwonago",
@@ -314,7 +422,7 @@
           "occ": ""
         }
       ],
-      "note": "Timetable location 'Mukwonago' (loc 4800), MP 86. Named by Chris 2026-09-01. Relabeled numeric [1,2] -> [N,S] positional, not yet field-verified. N/S Mukwonago are 548505/546505."
+      "note": "Aspect code 6 appears on signal:2 here, 194 frames this week, and is not in decode.py's CN_ASPECT. It shows up mid-movement, so it is a real aspect nobody has named yet. One of the three intermediates between N Midway and S Vernon (CN 4800). Its [10:12] track circuit works: 74 occupancy onsets this week, all coinciding with a knockdown in the same second. ESTIMATED MP 84.3 - see below. Second of the three intermediates north of the Midway pair (CN 4800). ESTIMATE METHOD: knockdown times chained north from S Burlington to S Vernon and scaled between those two operator-supplied mileposts. Accuracy where it can be checked: 0.6 mi at Oak Knoll Rd, 1.2-1.9 mi at the Midway ends. Treat as +/-2 mi. NOT a sighting."
     },
     "710343548505": {
       "name": "N Mukwonago",
@@ -330,7 +438,7 @@
           "occ": ""
         }
       ],
-      "note": "N end of Mukwonago (loc 4850), MP 87.8. Named by Chris 2026-09-01."
+      "note": "One of the three intermediates between N Midway and S Vernon (CN 4850). Its [10:12] track circuit works: 22 occupancy onsets this week, all coinciding with a knockdown in the same second. ESTIMATED MP 86.9 - see below. Third of the three intermediates north of the Midway pair (CN 4850). ESTIMATE METHOD: knockdown times chained north from S Burlington to S Vernon and scaled between those two operator-supplied mileposts. Accuracy where it can be checked: 0.6 mi at Oak Knoll Rd, 1.2-1.9 mi at the Midway ends. Treat as +/-2 mi. NOT a sighting."
     },
     "710343549005": {
       "name": "S Vernon",
@@ -367,6 +475,22 @@
           "signal": "NR"
         }
       ]
+    },
+    "710343550005": {
+      "name": "",
+      "sig": "CN",
+      "ind": [
+        {
+          "signal": "N"
+        },
+        {
+          "signal": "S"
+        },
+        {
+          "occ": ""
+        }
+      ],
+      "note": "Added 2026-08-31. 16-bit intermediate between N Vernon and Sunset Drive, 24,615 frames this week, previously heard but undefined. 0 out-of-table aspects across all 26 payloads. CROSS-RECEIVER ANOMALY: rpi5-Util hears this ID ZERO times in its whole archive while rpi5-ptc hears it continuously. Verified real on rpi5-ptc - own sequence counter at 1/s, own 28 s frame cadence, own payloads, no near-simultaneous collisions with 550505 - so it is not a sub-ID misresolution. The gap between receivers is unexplained. verify_templates.py reports FAIL on toggling tail bits: [10,11] are the track circuit, as on every 16-bit intermediate here. [12..15] also toggle, which is MORE live tail than its neighbours show - unexplained, and the reason to look at this one before extending the 16-bit layout."
     },
     "710343550505": {
       "name": "Sunset Drive",
@@ -519,7 +643,8 @@
         "proto": "#",
         "ibitsn": 32,
         "ibits": "SL0K,SASK,SC0K,SGK,NL0K,NASK,0LTK,NGK,SHTK,ASAK,SAK,NRELK,NREQK,NHTK,ANAK,OK,GFK,EQFK,GENK,TEMPK,D0K,P0K,SRELK,SREQK,,,,,,,,LCK"
-      }
+      },
+      "note": "CONTROL POINT WITH AN ELECTRIC LOCK on the switch - operator, 2026-09-03. NOT an intermediate in the sense this file uses the word, despite its [N,S] two-signal shape. Do not apply the intermediate convention to it. The ATCS block corroborates this independently and nobody had read it this way: 565005 is the ONLY plant on the sub with NO switch-machine keys at all - no NWK, no RWK, no SWCURRK - while carrying BOTH direction pairs of lock keys, NRELK/NREQK and SRELK/SREQK, plus 0LTK and LCK. Every power-operated control point here (552005, 553505, 557005, 562005, 567005, 568005) has NWK/RWK/SWCURRK and at most ONE rel/req pair. No switch machine to detect, and a release requestable from either direction, is exactly a hand-throw switch under electric lock. TRAILER [10:16] IS UNEXERCISED, NOT DEAD - and no bits have been discarded. It reads 000000 in 168,627 of 168,628 frames; the single exception (F7B4, 2026-08-25 09:00:13) flips three bits for one frame between identical neighbours 28 s and 8 s away with the signals unchanged, which is an RF bit error, not a lock cycle - a release persists for minutes. The lock was simply never requested during the archive window, which is ordinary for an industry lock. Those bits most likely carry lock state (request / release / time-out); they remain available in the trailer that decode_fields returns (wiu_decode.py:218) and wiu_decode emits (line 402). WATCH FOR the first sustained non-zero trailer here: that is a lock cycle, and it is what would let the field be declared with a known width. An `occ` field was appended on 2026-09-03 under the intermediate convention and REMOVED the same day - labelling lock state as occupancy would have reported 'Both occupied' permanently. The removal took the LABEL off, not the bits. Signals are fully live: 15/15 x91816, 15/7 x31775, 3/15 x27433, 15/8, 15/17, 15/13."
     },
     "710343565505": {
       "name": "N Lisbon Road",
@@ -700,18 +825,17 @@
         {
           "occ": ""
         }
-      ],
-      "note": "Intermediate ~1.5 mi N of Slinger (122.6). GPS 43.35284975,-88.29220276 -> MP 124.2. Named by Chris 2026-08-31. Labels N/S positional per the intermediate convention (Hubertus/Oakdale), not yet field-verified."
+      ]
     },
     "710343577505": {
       "name": "",
       "sig": "CN",
       "ind": [
         {
-          "signal": "1"
+          "signal": "N"
         },
         {
-          "signal": "2"
+          "signal": "S"
         },
         {
           "occ": ""
@@ -723,10 +847,13 @@
       "sig": "CN",
       "ind": [
         {
-          "signal": "1"
+          "signal": "N"
         },
         {
-          "signal": "2"
+          "signal": "S"
+        },
+        {
+          "occ": ""
         }
       ]
     },
@@ -735,10 +862,10 @@
       "sig": "CN",
       "ind": [
         {
-          "signal": "1"
+          "signal": "N"
         },
         {
-          "signal": "2"
+          "signal": "S"
         },
         {
           "occ": ""
@@ -758,8 +885,7 @@
         {
           "occ": ""
         }
-      ],
-      "note": "Intermediate N of Arthur Road. GPS 43.38035111,-88.30970840 -> 3.66 mi N of Slinger = MP 126.2. Named 'likely Cedar Lake' by Chris 2026-08-31. Labels N/S positional, not yet field-verified."
+      ]
     },
     "710343585505": {
       "name": "",
@@ -792,91 +918,7 @@
         {
           "occ": ""
         }
-      ],
-      "note": "Intermediate N of Cedar Lake. GPS 43.42078484,-88.34200034 -> 6.85 mi N of Slinger = MP 129.6. Named by Chris 2026-08-31. Already carried N/S labels."
-    },
-    "710343542505": {
-      "name": "N Burlington",
-      "sig": "CN",
-      "ind": [
-        {
-          "switch": ""
-        },
-        {
-          "signal": "S"
-        },
-        {
-          "signal": "NN"
-        },
-        {
-          "signal": "NR"
-        }
-      ],
-      "note": "Named 2026-08-31 on the operator's judgement, from THREE FRAMES - 2026-08-28 07:07-07:10, the only reception ever. Basis: it is the wayside immediately north of 542005 (S Burlington, MP 72.8, four sightings the same day), every confirmed siding on this sub has its two ends adjacent in the WIUID ladder, and its 24-bit payload validates on the sibling control-point layout with a dead 7-bit tail. There is no sighting of this wayside. If one ever contradicts this, this name is the first thing to drop."
-    },
-    "710343529005": {
-      "name": "",
-      "sig": "CN",
-      "ind": [
-        {
-          "switch": ""
-        },
-        {
-          "signal": "1"
-        },
-        {
-          "signal": "2"
-        },
-        {
-          "signal": "3"
-        }
-      ],
-      "note": "Added 2026-08-31. Heard first on 2026-08-31 (7 frames); 24-bit, decodes 0 illegal on the sibling CP layout with a dead 7-bit tail. Position in the ladder only - unnamed, unplaced."
-    },
-    "710343538005": {
-      "name": "",
-      "sig": "CN",
-      "ind": [
-        {
-          "signal": "1"
-        },
-        {
-          "signal": "2"
-        }
-      ],
-      "note": "Added 2026-08-31. 16-bit intermediate (126 frames, 2026-08-28); 0 illegal on [signal,signal], 126/126 illegal on the CP layout. Head order 1/2 is arbitrary - N/S not yet determined. Its tail bit [10] toggles, which verify_templates.py reports as FAIL; that is the documented [10:12] track-occupancy quadrature every 16-bit intermediate on this sub carries, not a short template."
-    },
-    "710343541105": {
-      "name": "",
-      "sig": "CN",
-      "ind": [
-        {
-          "switch": ""
-        },
-        {
-          "signal": "1"
-        },
-        {
-          "signal": "2"
-        },
-        {
-          "signal": "3"
-        }
-      ],
-      "note": "Added 2026-08-31. 24-bit CP (60 frames, 2026-08-28), switch seen both N and R; 0 illegal on the sibling layout, dead tail. Lies between 539505 and 542005, i.e. just south of S Burlington."
-    },
-    "710343546505": {
-      "name": "S Mukwonago",
-      "sig": "CN",
-      "ind": [
-        {
-          "signal": "N"
-        },
-        {
-          "signal": "S"
-        }
-      ],
-      "note": "S end of Mukwonago (loc 4650), MP 83.2. Named by Chris 2026-09-01. Intermediate, [N,S], no occ field. 99.9% known aspects over 19758 frames."
+      ]
     }
   }
 }
