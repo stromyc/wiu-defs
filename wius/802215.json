@@ -265,13 +265,10 @@
       "sig": "UP",
       "ind": [
         {
-          "switch": "1"
-        },
-        {
           "signal": "1"
         }
       ],
-      "note": "Mayfair m1 NB | UP MP 92.3 | VERIFIED (UP inventory 2026-09)"
+      "note": "Mayfair m1 NB | UP MP 92.3 | phantom switch removed 2026-09: [switch,signal]->[signal]; switch read OOC 53%, bits0-4 decode Clear/Restr/Approach 100%. VERIFIED"
     },
     "780221504204": {
       "name": "Mayfair MT2SB",
