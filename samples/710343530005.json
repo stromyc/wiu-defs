@@ -1,17 +1,22 @@
 {
   "wiuid": "710343530005",
   "data": "70BF",
-  "note": "aspect-fit 96%: Restricting+Approach (607 fr) | field cross-check pending",
+  "note": "aspect-fit 96%: Restricting+Approach (607 fr) | field cross-check pending | +occ field synced 2026-09",
   "expected": [
     {
       "kind": "signal",
-      "label": "1",
+      "label": "N",
       "value": 14
     },
     {
       "kind": "signal",
-      "label": "2",
+      "label": "S",
       "value": 8
+    },
+    {
+      "kind": "occ",
+      "label": "3",
+      "value": 3
     }
   ]
 }

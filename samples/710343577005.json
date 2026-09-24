@@ -1,7 +1,7 @@
 {
   "wiuid": "710343577005",
   "data": "E63F",
-  "note": "aspect-fit 99% (11082 fr, rpi5-Util) | field cross-check pending",
+  "note": "aspect-fit 99% (11082 fr, rpi5-Util) | field cross-check pending | +occ field synced 2026-09",
   "expected": [
     {
       "kind": "signal",
@@ -11,6 +11,11 @@
     {
       "kind": "signal",
       "label": "S",
+      "value": 3
+    },
+    {
+      "kind": "occ",
+      "label": "3",
       "value": 3
     }
   ]

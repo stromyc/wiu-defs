@@ -1,7 +1,7 @@
 {
   "wiuid": "710343550505",
   "data": "173F",
-  "note": "Sunset Drive; 2 heads N/S; aspect-fit 99% | field cross-check pending",
+  "note": "Sunset Drive; 2 heads N/S; aspect-fit 99% | field cross-check pending | +occ field synced 2026-09",
   "expected": [
     {
       "kind": "signal",
@@ -12,6 +12,11 @@
       "kind": "signal",
       "label": "S",
       "value": 7
+    },
+    {
+      "kind": "occ",
+      "label": "3",
+      "value": 3
     }
   ]
 }

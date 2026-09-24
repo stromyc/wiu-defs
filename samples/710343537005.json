@@ -1,7 +1,7 @@
 {
   "wiuid": "710343537005",
   "data": "7DEF7FC0",
-  "note": "aspect-fit 99% (1209 fr) | field cross-check pending",
+  "note": "aspect-fit 99% (1209 fr) | field cross-check pending | +occ field synced 2026-09",
   "expected": [
     {
       "kind": "switch",
@@ -22,6 +22,11 @@
       "kind": "signal",
       "label": "3",
       "value": 15
+    },
+    {
+      "kind": "occ",
+      "label": "5",
+      "value": 3
     }
   ]
 }
