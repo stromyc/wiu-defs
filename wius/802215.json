@@ -261,7 +261,7 @@
       ]
     },
     "780221504203": {
-      "name": "",
+      "name": "Mayfair m1 NB",
       "sig": "UP",
       "ind": [
         {
@@ -270,19 +270,21 @@
         {
           "signal": "1"
         }
-      ]
+      ],
+      "note": "Mayfair m1 NB | UP MP 92.3 | VERIFIED (UP inventory 2026-09)"
     },
     "780221504204": {
-      "name": "",
+      "name": "Mayfair MT2SB",
       "sig": "UP",
       "ind": [
         {
           "signal": "1"
         }
-      ]
+      ],
+      "note": "Mayfair MT2SB | UP MP 92.4 | SUPPORTED (UP inventory 2026-09)"
     },
     "780221504303": {
-      "name": "",
+      "name": "Mayfair m2",
       "sig": "UP",
       "ind": [
         {
@@ -291,7 +293,8 @@
         {
           "signal": "2"
         }
-      ]
+      ],
+      "note": "Mayfair m2 | UP MP ~92.3 | TENTATIVE (UP inventory 2026-09)"
     },
     "780221504403": {
       "name": "",
@@ -330,7 +333,7 @@
       ]
     },
     "780221504603": {
-      "name": "",
+      "name": "Butler",
       "sig": "UP",
       "ind": [
         {
@@ -342,10 +345,11 @@
         {
           "switch": "3"
         }
-      ]
+      ],
+      "note": "Butler | UP MP ~95.3 | TENTATIVE (UP inventory 2026-09)"
     },
     "780221504703": {
-      "name": "",
+      "name": "BJ South N096",
       "sig": "UP",
       "ind": [
         {
@@ -369,10 +373,11 @@
         {
           "signal": "4"
         }
-      ]
+      ],
+      "note": "BJ South N096 | UP MP 96.1 | SUPPORTED (UP inventory 2026-09)"
     },
     "780221504803": {
-      "name": "",
+      "name": "BJ East N097",
       "sig": "UP",
       "ind": [
         {
@@ -393,7 +398,8 @@
         {
           "signal": "4"
         }
-      ]
+      ],
+      "note": "BJ East N097 | UP MP 96.8 | SUPPORTED (UP inventory 2026-09)"
     }
   }
 }

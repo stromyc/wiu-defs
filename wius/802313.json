@@ -147,7 +147,7 @@
       ]
     },
     "780231304903": {
-      "name": "",
+      "name": "HWY E",
       "sig": "UP",
       "ind": [
         {
@@ -156,10 +156,11 @@
         {
           "signal": "2"
         }
-      ]
+      ],
+      "note": "HWY E | UP MP 298.6 | VERIFIED (UP inventory 2026-09)"
     },
     "780231305003": {
-      "name": "",
+      "name": "Lake 5 Road",
       "sig": "UP",
       "ind": [
         {
@@ -168,10 +169,11 @@
         {
           "signal": "2"
         }
-      ]
+      ],
+      "note": "Lake 5 Road | UP MP 301.5 | VERIFIED (UP inventory 2026-09)"
     },
     "780231305203": {
-      "name": "",
+      "name": "Sussex",
       "sig": "UP",
       "ind": [
         {
@@ -180,10 +182,11 @@
         {
           "signal": "2"
         }
-      ]
+      ],
+      "note": "Sussex | UP MP 304.3 | VERIFIED (UP inventory 2026-09)"
     },
     "780231305303": {
-      "name": "",
+      "name": "Sussex Quad",
       "sig": "UP",
       "ind": [
         {
@@ -192,10 +195,11 @@
         {
           "signal": "2"
         }
-      ]
+      ],
+      "note": "Sussex Quad | UP MP ~306.3 | SUPPORTED (UP inventory 2026-09)"
     },
     "780231305403": {
-      "name": "",
+      "name": "Marcy West",
       "sig": "UP",
       "ind": [
         {
@@ -210,10 +214,11 @@
         {
           "signal": "3"
         }
-      ]
+      ],
+      "note": "Marcy West | UP MP 309.3 | VERIFIED (UP inventory 2026-09)"
     },
     "780231305503": {
-      "name": "",
+      "name": "Marcy East",
       "sig": "UP",
       "ind": [
         {
@@ -223,7 +228,8 @@
           "signal": "2"
         }
       ],
-      "rid": "4C1ECD"
+      "rid": "4C1ECD",
+      "note": "Marcy East | UP MP 311.4 | VERIFIED (UP inventory 2026-09)"
     }
   }
 }
